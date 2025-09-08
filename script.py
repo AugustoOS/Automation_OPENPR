@@ -63,7 +63,7 @@ def main():
         matlab_cmds.append(f"open('{full_path}');")
 
     matlab_code = " ".join(matlab_cmds)
-    run_cmd(f'{cfg.MATLAB_CMD} -nosplash -r "{matlab_code}"')
+    run_cmd(f'{cfg.MATLAB_2022b} -nosplash -r "{matlab_code}"')
 
 if __name__ == "__main__":
     main()
