@@ -38,7 +38,7 @@ Reviewing model-based (Simulink) pull requests by hand is repetitive: open the P
 - **Python 3.6+** — https://www.python.org/
 - **GitHub CLI (`gh`)** — https://cli.github.com/
 - **MATLAB** (with Simulink)
-- Access to the target GitHub repository *(connect to your VPN first if it lives on an internal / enterprise GitHub host)*
+- Access to the target GitHub repository
 
 ## 🚀 Setup
 
@@ -46,14 +46,13 @@ Reviewing model-based (Simulink) pull requests by hand is repetitive: open the P
 
 **1. Install Python and the GitHub CLI** (links above).
 
-**2. Authenticate the GitHub CLI** against your GitHub host — run in PowerShell (VPN on if the host is internal):
+**2. Authenticate the GitHub CLI:**
 
-```powershell
-$env:GH_HOST="<YOUR_GITHUB_HOST>"
-gh.exe auth login -h $env:GH_HOST
+```bash
+gh auth login
 ```
 
-Follow the browser flow when prompted.
+Follow the prompts and complete the browser flow when asked.
 
 **3. Confirm the tools are available** — in Git Bash:
 
